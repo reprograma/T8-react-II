@@ -49,7 +49,7 @@ O projeto que vamos desenvolver nessa semana se chama **RocketChat**, semelhante
   - Acesse os links abaixo para pegar o css
     - [Pagina de Contato](https://github.com/reprograma/T8-React-II/blob/master/src/paginas/Contato/styles.css)
     - [Pagina de Chat](https://github.com/reprograma/T8-React-II/blob/master/src/paginas/Chat/styles.css)
-    - [Compoente Header](https://github.com/reprograma/T8-React-II/blob/master/src/componentes/Header/styles.css)
+    - [Componente Header](https://github.com/reprograma/T8-React-II/blob/master/src/componentes/Header/styles.css)
     - [Componente Mensagens](https://github.com/reprograma/T8-React-II/blob/master/src/componentes/Mensagens/styles.css)
     - [Componente Nav](https://github.com/reprograma/T8-React-II/blob/master/src/componentes/Nav/styles.css)
     - [Componente Menu](https://github.com/reprograma/T8-React-II/blob/master/src/componentes/Nav/Menu/styles.css)
@@ -138,17 +138,17 @@ Fonte: [Guia completo do package.json](https://www.luiztools.com.br/post/o-guia-
 
 Em nosso projeto nós iremos utilizar algumas da lista abaixo, mas existem milhares de opções!
 
-  *[Create React App](https://github.com/facebook/create-react-app)
-  *[React-Router-Dom](https://reacttraining.com/react-router/web/guides/quick-start)
-  *[Axios](https://www.npmjs.com/package/axios)
-  *[Redux](https://redux.js.org/)
-  *[Bootstrap](https://www.npmjs.com/package/react-bootstrap)
-  *[Material UI](https://www.npmjs.com/package/@material-ui/core)
-  *[Ant Design](https://ant.design/docs/react/introduce)
-  *[Styled Components](https://github.com/styled-components/styled-components)
-  *[Formik](https://github.com/jaredpalmer/formik)
-  *[Jest](https://jestjs.io/)
-  *[Gatsby](https://www.gatsbyjs.org/)
+  * [Create React App](https://github.com/facebook/create-react-app)
+  * [React-Router-Dom](https://reacttraining.com/react-router/web/guides/quick-start)
+  * [Axios](https://www.npmjs.com/package/axios)
+  * [Redux](https://redux.js.org/)
+  * [Bootstrap](https://www.npmjs.com/package/react-bootstrap)
+  * [Material UI](https://www.npmjs.com/package/@material-ui/core)
+  * [Ant Design](https://ant.design/docs/react/introduce)
+  * [Styled Components](https://github.com/styled-components/styled-components)
+  * [Formik](https://github.com/jaredpalmer/formik)
+  * [Jest](https://jestjs.io/)
+  * [Gatsby](https://www.gatsbyjs.org/)
 
 ***
 
@@ -412,7 +412,7 @@ Fonte: [Padrões em react](https://medium.com/@oieduardorabelo/padr%C3%B5es-em-r
 ### O que é Axios
 Axios é um cliente HTTP, que funciona tanto no browser quanto em node.js. A biblioteca é basicamente uma API que sabe interagir tanto com `XMLHttpRequest` quanto com a interface `http` do node. Isso significa que o mesmo código utilizado para fazer requisições ajax no browser também funciona no servidor. Além disso, as requisições feitas através da biblioteca retornam uma promise, compatível com a nova versão do JavaScript - ES6.
 
->NOTA: async / await faz parte do ECMAScript 2017 e não é suportado no Internet Explorer e em navegadores mais >antigos, portanto, use com cuidado.
+>NOTA: async / await faz parte do ECMAScript 2017 e não é suportado no Internet Explorer e em navegadores mais antigos, portanto, use com cuidado.
 
 Para comerçar é necessário fazer a instalação do package:
 

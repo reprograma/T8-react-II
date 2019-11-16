@@ -4,7 +4,6 @@
     min-height: 100vh;
     background-position: right center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: overlay; 
     flex-direction: column;
@@ -19,5 +18,3 @@
     font-size: 3rem;
     color: white;
   }
-
-  
