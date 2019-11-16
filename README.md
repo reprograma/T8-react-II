@@ -46,7 +46,13 @@ O projeto que vamos desenvolver nessa semana se chama **RocketChat**, semelhante
   - Usar o `create-react-app` para criar o boilerplat do projeto
   - Acesse https://rocketchat.netlify.com/ para ver o projeto que iremos desenvolver
   - Acesse https://drive.google.com/open?id=1okZ0CyFfk6ghcAm6KhxD0uxvTjXZsl-V para pegar as imagens do projeto
-  - Acesse **inserir link** para pegar o css
+  - Acesse os links abaixo para pegar o css
+    - [Pagina de Contato](https://github.com/reprograma/T8-React-II/blob/master/src/paginas/Contato/styles.css)
+    - [Pagina de Chat](https://github.com/reprograma/T8-React-II/blob/master/src/paginas/Chat/styles.css)
+    - [Compoente Header](https://github.com/reprograma/T8-React-II/blob/master/src/componentes/Header/styles.css)
+    - [Componente Mensagens](https://github.com/reprograma/T8-React-II/blob/master/src/componentes/Mensagens/styles.css)
+    - [Componente Nav](https://github.com/reprograma/T8-React-II/blob/master/src/componentes/Nav/styles.css)
+    - [Componente Menu](https://github.com/reprograma/T8-React-II/blob/master/src/componentes/Nav/Menu/styles.css)
 
 ***
 
@@ -132,26 +138,26 @@ Fonte: [Guia completo do package.json](https://www.luiztools.com.br/post/o-guia-
 
 Em nosso projeto nós iremos utilizar algumas da lista abaixo, mas existem milhares de opções!
 
-  -[Create React App](https://github.com/facebook/create-react-app)
-  -[React-Router-Dom](https://reacttraining.com/react-router/web/guides/quick-start)
-  -[Axios](https://www.npmjs.com/package/axios)
-  -[Redux](https://redux.js.org/)
-  -[Bootstrap](https://www.npmjs.com/package/react-bootstrap)
-  -[Material UI](https://www.npmjs.com/package/@material-ui/core)
-  -[Ant Design](https://ant.design/docs/react/introduce)
-  -[Styled Components](https://github.com/styled-components/styled-components)
-  -[Formik](https://github.com/jaredpalmer/formik)
-  -[Jest](https://jestjs.io/)
-  -[Gatsby](https://www.gatsbyjs.org/)
+  *[Create React App](https://github.com/facebook/create-react-app)
+  *[React-Router-Dom](https://reacttraining.com/react-router/web/guides/quick-start)
+  *[Axios](https://www.npmjs.com/package/axios)
+  *[Redux](https://redux.js.org/)
+  *[Bootstrap](https://www.npmjs.com/package/react-bootstrap)
+  *[Material UI](https://www.npmjs.com/package/@material-ui/core)
+  *[Ant Design](https://ant.design/docs/react/introduce)
+  *[Styled Components](https://github.com/styled-components/styled-components)
+  *[Formik](https://github.com/jaredpalmer/formik)
+  *[Jest](https://jestjs.io/)
+  *[Gatsby](https://www.gatsbyjs.org/)
 
 ***
 
 ## Rotas
 
-#### O que é SPA
+### O que é SPA
 Um aplicativo de página única (em inglês “single-page application”, ou SPA) é uma aplicação web ou site que consiste de uma única página web com o objetivo de fornecer uma experiência do usuário similar à de um aplicativo desktop. Em um SPA, todo o código necessário (HTML, JavaScript e CSS) ou é obtido com um único carregamento de página, ou os recursos apropriados são carregados dinamicamente e adicionados à página conforme necessário, geralmente em resposta a ações do usuário. A página não é recarregada em qualquer momento do processo, tampouco ocorre a transferência de controle para outra página, embora a URL no navegador ou a API de história do HTML5 possam ser usadas para fornecer a percepção e navegabilidade de páginas separadas ao aplicativo.
 
-##### SPA
+#### SPA
 
 **Prós:**
 - Melhor experiência de usuário
@@ -177,7 +183,7 @@ Essas aplicações, não são totalmente SPA’s, mas incorporam muitos elemento
   - *Facebook:* Esse aqui já nem da pra perceber o que é, do que não é.
   - *Github:* O Github utiliza Ruby On Rails, e apenas utiliza JavaScript para melhorar a experiência do usuário.
 
-##### Aplicações convencionais
+#### Aplicações convencionais
 
 **Prós:**
 - Tempo de carregamento da página normalmente é menor
@@ -198,7 +204,7 @@ Esse aqui foi até difícil de lembrar, são sites que utilizam pouco, ou quase 
 
 Fonte: [Training Center](https://medium.com/trainingcenter/descomplicando-spas-caa8f57bdbf3)
 
-#### Usando react-router-dom
+### Usando react-router-dom
 O `react-router-dom` é uma biblioteca de roteamento usada para criar paginação nas aplicações de `react`.
 
 Para comerçar é necessário fazer a instalação do package:
@@ -278,7 +284,10 @@ Onde temos:
 
 - *Link*: fornece navegação declarativa e acessível em torno de seu aplicativo.
 - *to*: pode ser uma string, objeto ou função. Acima usamos uma representação de string do local do Link. Ela pode ser criada concatenando as propriedades **Location Pathname**, **Search** e **Hash**.
-Exemplo: ```jsx
+
+Exemplo:
+
+```jsx
 <Link to="/courses?sort=name" />
 ```
 
@@ -299,7 +308,7 @@ Os elementos de formulário HTML funcionam de maneira um pouco diferente de outr
 </form>
 ```
 
-#### Componentes controlados
+### Componentes controlados
 Em HTML, elementos de formulário como `<input>`, `<textarea>` e `<select>` normalmente mantêm seu próprio estado e o atualiza baseado na entrada do usuário. Em React, o estado mutável é normalmente mantido na propriedade state dos componentes e atualizado apenas com `setState()`.
 
 Podemos combinar os dois fazendo o estado React ser a “única fonte da verdade”. Assim, o componente React que renderiza um formulário também controla o que acontece nesse formulário nas entradas subsequentes do usuário. Um input cujo o valor é controlado pelo React dessa maneira é chamado de “componente controlado” (controlled component).
@@ -351,7 +360,7 @@ handleChange(event) {
 
 Fonte: [reactjs](https://pt-br.reactjs.org/docs/forms.html)
 
-##### Utilizando reducers ao registrar eventos
+#### Utilizando reducers ao registrar eventos
 Ao manipularmos eventos, é comum adotar a convenção de nomeação `handle{NomeDoEvento}`.
 
 ```jsx
@@ -400,7 +409,7 @@ Fonte: [Padrões em react](https://medium.com/@oieduardorabelo/padr%C3%B5es-em-r
 
 ## Requisões API
 
-#### O que é Axios
+### O que é Axios
 Axios é um cliente HTTP, que funciona tanto no browser quanto em node.js. A biblioteca é basicamente uma API que sabe interagir tanto com `XMLHttpRequest` quanto com a interface `http` do node. Isso significa que o mesmo código utilizado para fazer requisições ajax no browser também funciona no servidor. Além disso, as requisições feitas através da biblioteca retornam uma promise, compatível com a nova versão do JavaScript - ES6.
 
 >NOTA: async / await faz parte do ECMAScript 2017 e não é suportado no Internet Explorer e em navegadores mais >antigos, portanto, use com cuidado.
@@ -446,13 +455,13 @@ Fonte: [axios](https://github.com/axios/axios)
 
 ***
 
-#### Ciclo de vida do componente
+### Ciclo de vida do componente
 
 ![ciclo de vida](src/imagens/diagrama-ciclo-de-vida.png)
 
 Cada componente possui muitos “métodos do ciclo de vida” que você pode sobrescrever para executar determinado código em momentos particulares do processo. Você pode usar o diagrama acima do ciclo de vida para consulta. Na lista abaixo, os métodos do ciclo de vida mais usados estão marcados em negrito. O resto deles, existe para o uso em casos relativamente raros.
 
-##### Montando (mounting)
+#### Montando (mounting)
 Estes métodos são chamados na seguinte ordem quando uma instância de um componente está sendo criada e inserida no DOM:
 
 * **constructor()**
@@ -460,7 +469,7 @@ Estes métodos são chamados na seguinte ordem quando uma instância de um compo
 * **render()**
 * **componentDidMount()**
 
-##### Atualizando
+#### Atualizando
 Uma atualização pode ser causada por alterações em props ou no state. Estes métodos são chamados na seguinte ordem quando um componente esta sendo re-renderizado:
 
 - static getDerivedStateFromProps()
@@ -469,7 +478,7 @@ Uma atualização pode ser causada por alterações em props ou no state. Estes 
 - getSnapshotBeforeUpdate()
 - **componentDidUpdate()**
 
-##### Desmontando (unmounting)
+#### Desmontando (unmounting)
 Estes métodos são chamados quando um componente está sendo removido do DOM:
 
 - **componentWillUnmount()**
