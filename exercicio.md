@@ -6,27 +6,25 @@ O objetivo desse exercício é revisar e treinar os conceitos aprendidos durante
 
 Como usuário do site quero ter acesso ao blog com conteúdos
 
-**Dado**
-que estou no site
+ - **Dado** que estou no site
 
-**Quando**
-clico no item 'Blog' do menu
+ - **Quando** clico no item 'Blog' do menu
 
-**Então**
-visualizo a página blog com a url '/blog'
+  - **Então** visualizo a página blog com a url '/blog'
 
+***
 
 
-**Dado**
-que estou na página Blog
+  - **Dado** que estou na página Blog
 
-**Quando**
-scrolo a página
+  - **Quando** scrolo a página
 
-**Então**
-visualizo um header com imagem e título "Blog" e as postagens com título, texto e botão "Saiba mais"
+  - **Então** visualizo um header com imagem e título "Blog" e as postagens com título, texto e botão "Saiba mais"
+  
 
 Visualize o projeto em https://rocketchat.netlify.com/
+
+***
 
 ## Requisitos
 
