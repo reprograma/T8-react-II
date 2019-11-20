@@ -2,7 +2,6 @@ import React from 'react'
 import './styles.css'
 
 export default function Mensagem (props) {
-  console.log(props)
   return (
     <div className='mensagem'>
       <img

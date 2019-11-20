@@ -15,7 +15,6 @@ function Chat () {
     setTimeout(
       getMensagens()
         .then(response => {
-          console.log(response)
           handleStatusChange(response.data)
         })
         .catch(error => {

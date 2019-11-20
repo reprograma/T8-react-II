@@ -3,7 +3,6 @@ import Legenda from './Legenda'
 import CaixaTexto from './CaixaTexto'
 
 function Grupo (props) {
-  console.log(props.erro, 'erro retorna')
   return (
     <div>
       {props.children}
