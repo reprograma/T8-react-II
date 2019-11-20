@@ -14,13 +14,9 @@ class Contato extends Component {
     }
   }
 
-  handleClick = e => {
-    e.preventDefault()
-    const clique = e.target.value
-    console.log(clique, 'clicou')
-
+  handleClick = (proximaPagina) => {
     this.setState({
-      conteudo: clique
+      conteudo: proximaPagina
     })
   }
 

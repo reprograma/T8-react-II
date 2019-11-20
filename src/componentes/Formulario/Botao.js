@@ -7,9 +7,14 @@ export default function Botao (props) {
     classes += ' botao--desabilitado'
   }
 
+  const handleMudaPagina = (e) => {
+    e.preventDefault()
+    props.onClick('final')
+  }
+
   return (
-    <div value={props.value} onClick={props.onClick} className={classes}>
+    <button value={props.value} onClick={handleMudaPagina} className={classes}>
       {props.children}
-    </div>
+    </button>
   )
 }
