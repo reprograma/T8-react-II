@@ -1,0 +1,13 @@
+.blog-postagens {
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blog-postagens>span{
+    margin-top:50px;
+    font-size: 30px;
+    font-weight: bold;
+}

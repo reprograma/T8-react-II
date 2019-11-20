@@ -46,6 +46,11 @@ class LinkMenu extends React.Component {
               Chat
             </Link>
           </li>
+          <li>
+            <Link to='/blog' className='navbar-links__ativo'>
+              Blog
+            </Link>
+          </li>
         </ul>
       </div>
     )

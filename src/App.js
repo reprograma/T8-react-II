@@ -5,6 +5,7 @@ import Navbar from './componentes/Nav'
 // paginas
 import Contato from './paginas/Contato'
 import Chat from './paginas/Chat'
+import Blog from './paginas/Blog'
 import PaginaInicial from './paginas/PaginaInicial'
 
 function App () {
@@ -15,6 +16,7 @@ function App () {
         <Route exact path='/' component={PaginaInicial} />
         <Route path='/contato' component={Contato} />
         <Route path='/chat' component={Chat} />
+        <Route path='/blog' component={Blog} />
       </div>
     </Switch>
   )

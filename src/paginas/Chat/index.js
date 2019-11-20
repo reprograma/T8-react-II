@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import Mensagem from '../../componentes/Mensagens'
-import { getMensagens } from '../../service/base'
+import Mensagem from '../../componentes/Mensagem'
+import { getMensagens } from '../../service/mensagens'
 // Importe de estilo
 import './styles.css'
 

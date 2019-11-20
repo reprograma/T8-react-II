@@ -1,0 +1,27 @@
+.postagem {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+  margin: 50px auto;
+}
+
+.postagem .botao {
+  background: linear-gradient(179.24deg, #834FC6 -27.71%, #F7D9BB -12.76%, #834FC6 78.2%);
+  border-radius: 3px;
+  color: #242038;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 15px;
+  border: none;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 150px;
+}
