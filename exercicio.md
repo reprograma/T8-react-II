@@ -30,7 +30,7 @@ Visualize o projeto em https://rocketchat.netlify.com/
 
 ## Requisitos
 
-  - A requisição deverá ser feita para a API https://jsonplaceholder.typicode.com/posts
+  - A requisição deverá ser feita para a API https://jsonplaceholder.typicode.com/posts, para saber mais sobre a documentação [acesse o guia](https://jsonplaceholder.typicode.com/guide.html)
   - Deverá ser reutilizado o componente Header que já existe
   - A nova imagem está disponível aqui https://drive.google.com/open?id=1okZ0CyFfk6ghcAm6KhxD0uxvTjXZsl-V
   - Deverá criar a nova rota '/blog' e adicionar link ao menu
