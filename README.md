@@ -23,6 +23,7 @@ Este módulo tem como objetivo ensinar às alunas conceitos para a criação de 
   - [O que é o Axios](#o-que-é-axios)
   - [Ciclo de vida do componente](#ciclo-de-vida-do-componente)
   - [Utilizando array como children](#utilizando-array-como-children)
+* [Exercício](https://github.com/reprograma/T8-React-II/blob/master/src/exercicio.md)
 
 ***
 
