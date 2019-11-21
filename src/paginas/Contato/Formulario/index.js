@@ -1,6 +1,10 @@
 import React from 'react'
 import Grupo from './componentes/Grupo'
 import Botao from './componentes/Botao'
+
+// props = {
+//   mudaConteudo: this.handleMudaConteudo
+// }
 class Formulario extends React.Component {
   constructor(props) {
     super(props)
@@ -44,13 +48,23 @@ class Formulario extends React.Component {
     )
   }
 
+  handleSubmit = () => {
+    const novoContato = {
+      nome: this.state.nome.valor,
+      email: this.state.email.valor,
+      pais: this.state.pais.valor,
+      mensagem: this.state.mensagem.valor
+    }
+    console.log(novoContato, 'enviou')
+  }
+
   render() {
     const verificaBotao = this.estaDesabilitado()
     //true ou false
     return (
       <div className='pagina'>
         <h2>Entre em contato conosco!</h2>
-        <form className='formulario'>
+        <form className='formulario' id='form1' onSubmit={this.handleSubmit}>
           <Grupo erro={this.state.nome.erro} >
             <Grupo.Legenda htmlFor='nome'> Nome Completo: </Grupo.Legenda>
             <Grupo.CaixaTexto
@@ -93,7 +107,14 @@ class Formulario extends React.Component {
           </Grupo>
           <Botao
             desabilitado={verificaBotao}
-          />
+            mudaConteudo={this.props.mudaConteudo}
+            onSubmit={this.handleSubmit}
+            pagina='sucesso'
+            type='submit'
+          >
+            Enviar
+          </Botao>
+
       </form>
     </div>
     )
