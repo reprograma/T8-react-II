@@ -1,6 +1,6 @@
 import React from 'react'
-import Grupo from './Grupo'
-
+import Grupo from './componentes/Grupo'
+import Botao from './componentes/Botao'
 class Formulario extends React.Component {
   constructor(props) {
     super(props)
@@ -33,7 +33,20 @@ class Formulario extends React.Component {
     })
   }
 
+  estaDesabilitado = () => {
+    return (
+      !this.state.nome.valor ||
+      this.state.nome.erro ||
+      !this.state.email.valor ||
+      this.state.email.erro ||
+      !this.state.pais.valor ||
+      this.state.pais.erro
+    )
+  }
+
   render() {
+    const verificaBotao = this.estaDesabilitado()
+    //true ou false
     return (
       <div className='pagina'>
         <h2>Entre em contato conosco!</h2>
@@ -78,6 +91,9 @@ class Formulario extends React.Component {
                type='text'
             />
           </Grupo>
+          <Botao
+            desabilitado={verificaBotao}
+          />
       </form>
     </div>
     )
