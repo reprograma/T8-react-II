@@ -64,7 +64,7 @@ class Formulario extends React.Component {
     return (
       <div className='pagina'>
         <h2>Entre em contato conosco!</h2>
-        <form className='formulario' id='form1' onSubmit={this.handleSubmit}>
+        <form className='formulario' >
           <Grupo erro={this.state.nome.erro} >
             <Grupo.Legenda htmlFor='nome'> Nome Completo: </Grupo.Legenda>
             <Grupo.CaixaTexto
