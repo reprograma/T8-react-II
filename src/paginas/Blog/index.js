@@ -3,7 +3,7 @@ import React from 'react'
 import Postagem from '../../componentes/Postagem'
 import Header from '../../componentes/Header'
 
-import { getPosts } from '../../service/posts'
+import { getPosts } from '../../services/posts'
 
 import './styles.css'
 
